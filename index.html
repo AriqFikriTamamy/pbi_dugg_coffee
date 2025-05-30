@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Dugg Coffee</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="Logo Dugg Coffee.png" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poller+One&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+      /* @import url("~lucide-static/font/Lucide.css"); */
     </style>
   </head>
   <body>
     <header>
+      <!-- Navbar -->
       <div class="container">
         <nav class="navbar">
           <div class="nav-logo">
@@ -26,7 +29,7 @@
             <a href="./index.html" class="text-logo">Dugg Coffee</a>
           </div>
           <ul class="nav-list">
-            <li><a href="./index.html" id="selected">Home</a></li>
+            <li><a href="./index.html" id="navbar-selected">Home</a></li>
             <li><a href="">Menu</a></li>
             <li><a href="">About Us</a></li>
             <li><a href="">Artikel</a></li>
@@ -40,6 +43,7 @@
       </div>
     </header>
     <main>
+      <!-- Hero Section -->
       <div class="container">
         <section class="hero">
           <div class="background-hero">
@@ -49,11 +53,292 @@
               class="image-hero"
             />
           </div>
-          <!-- <p>Test</p> -->
         </section>
-        <section class="menu"></section>
+
+        <!-- Menu Section -->
+        <div class="container">
+          <section class="menu">
+            <div class="menu-section">
+              <div class="menu-title">
+                <h1>Dugg Coffee <span>Menu</span></h1>
+              </div>
+
+              <div class="menu-navbar">
+                <ul>
+                  <li id="menu-bar-selected">Beverages</li>
+                  <li>Seasonal</li>
+                  <li>Signature</li>
+                  <li>Shareables</li>
+                  <li>Main Course</li>
+                </ul>
+              </div>
+
+              <div class="menu-badge-section">
+                <div class="menu-badge-left">
+                  <div class="menu-badge" id="menu-badge-selected">
+                    <div class="badge-title">
+                      <p>Latte Hot</p>
+                    </div>
+                    <div class="badge-price">
+                      <p>25 K</p>
+                    </div>
+                  </div>
+
+                  <div class="menu-badge">
+                    <div class="badge-title">
+                      <p>Amerikano</p>
+                    </div>
+                    <div class="badge-price">
+                      <p>23 K</p>
+                    </div>
+                  </div>
+
+                  <div class="menu-badge">
+                    <div class="badge-title" id="vanila-latte">
+                      <p>Vanila Latte</p>
+                    </div>
+                    <div class="badge-price">
+                      <p>25 K</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="menu-badge-right">
+                  <div class="menu-badge">
+                    <div class="badge-title">
+                      <p>Espresso</p>
+                    </div>
+                    <div class="badge-price">
+                      <p>20 K</p>
+                    </div>
+                  </div>
+
+                  <div class="menu-badge">
+                    <div class="badge-title" id="manual-brew">
+                      <p>Manual Brew</p>
+                    </div>
+                    <div class="badge-price">
+                      <p>25 K</p>
+                    </div>
+                  </div>
+
+                  <div class="menu-badge">
+                    <div class="badge-title" id="vanila-latte">
+                      <p>Long Black</p>
+                    </div>
+                    <div class="badge-price">
+                      <p>23 K</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-order">
+                <div class="menu-text">
+                  <p>Silahkan Memesan dan Berikan Review Kamu</p>
+                </div>
+
+                <div class="menu-order-section">
+                  <div class="order-history">
+                    <img
+                      src="Icon Riwayat pembelian.png"
+                      alt="Riwayat Pembelian"
+                    />
+                  </div>
+
+                  <div class="order-button">
+                    <button>Pesan Sekarang</button>
+                  </div>
+
+                  <div class="review-button">
+                    <button>Berikan Review</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item-card">
+              <div class="image-item">
+                <img src="FeedsProduk_1 1.png" alt="Image Item" />
+              </div>
+
+              <div class="item-description">
+                <div class="item-name">
+                  <div class="item-title">
+                    <p>Latte Hot</p>
+                  </div>
+                  <div class="item-subtitle">
+                    <p>Ekspreso + Susu</p>
+                  </div>
+                </div>
+
+                <div class="item-review">
+                  <div class="item-comment">
+                    <p>Lihat Komentar</p>
+                    <!-- <div class="icon-chevron-right"></div> -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chevron-right-icon lucide-chevron-right"
+                    >
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </div>
+
+                  <div class="item-rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="39"
+                      height="39"
+                      viewBox="0 0 24 24"
+                      fill="#F8C015"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-star-icon lucide-star"
+                    >
+                      <path
+                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                      />
+                    </svg>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="39"
+                      height="39"
+                      viewBox="0 0 24 24"
+                      fill="#F8C015"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-star-icon lucide-star"
+                    >
+                      <path
+                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                      />
+                    </svg>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="39"
+                      height="39"
+                      viewBox="0 0 24 24"
+                      fill="#F8C015"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-star-icon lucide-star"
+                    >
+                      <path
+                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                      />
+                    </svg>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="39"
+                      height="39"
+                      viewBox="0 0 24 24"
+                      fill="#F8C015"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-star-icon lucide-star"
+                    >
+                      <path
+                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                      />
+                    </svg>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="39"
+                      height="39"
+                      viewBox="0 0 24 24"
+                      fill="#B5B5B5"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-star-icon lucide-star"
+                    >
+                      <path
+                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                      />
+                    </svg>
+                    <!-- <p>Test</p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- About Section -->
+        <div class="container">
+          <section class="about">
+            <div class="about-section">
+              <div class="about-title">
+                <h1>About</h1>
+                <span>Dugg Coffee</span>
+              </div>
+              <div class="about-subtitle">
+                <h3>Your Green Escape in the Heart of Bandung.</h3>
+              </div>
+              <div class="about-description">
+                <p>
+                  Dugg Coffee hadir sebagai lebih dari sekadar tempat menikmati
+                  kopi—kami adalah ruang inspirasi, relaksasi, dan koneksi bagi
+                  siapa saja yang mencari suasana nyaman di tengah hiruk-pikuk
+                  kota. Berlokasi di Jalan Gegerkalong Girang No. 66, Bandung,
+                  kami menawarkan pengalaman unik dengan kombinasi Fun Room,
+                  Meeting Room, dan Koi Ponds, menciptakan atmosfer yang
+                  seimbang antara produktivitas dan ketenangan.
+                </p>
+              </div>
+              <div class="about-button">
+                <button>
+                  Lihat Selengkapnya
+                  <!-- <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-right-icon lucide-chevron-right"
+                  >
+                    <path d="m9 18 6-6-6-6" />
+                  </svg> -->
+                </button>
+              </div>
+            </div>
+            <div class="about-image">
+              <img src="frame Image about dugg coffee.png" alt="Gambar About" />
+            </div>
+          </section>
+        </div>
       </div>
     </main>
     <footer></footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
