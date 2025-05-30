@@ -1,3 +1,8 @@
+@font-face {
+    font-family:'Gotham Medium' ;
+    src: url('gotham/Gotham\ Fonts\ Family/GothamNarrow-Medium.otf') format('otf');
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -46,6 +51,7 @@ header .container .navbar{
     text-decoration: none;
     color: #ffff;
     text-transform: uppercase;
+    font-family: 'Gotham Medium', sans-serif;
 }
 
 .container .navbar .nav-list{
@@ -137,7 +143,7 @@ main .container .menu{
     gap: 50px;
 }
 
-.menu-section{
+.container .menu .menu-section{
     margin-right: 0;
 }
 
@@ -218,7 +224,7 @@ main .container .menu{
     margin-bottom: 11px;
 }
 
-#menu-badge-selected{
+.menu-badge-section .menu-badge-left #menu-badge-selected{
     background-color: #184265;
 }
 
@@ -231,7 +237,11 @@ main .container .menu{
     margin-left: 31.25px;
 }
 
-.menu-badge-sectioon .menu-badge #vanila-latte{
+#vanila-latte{
+    margin-left: 26.25px;
+}
+
+#manual-brew{
     margin-left: 26.25px;
 }
 
@@ -256,6 +266,67 @@ main .container .menu{
     color: #ffff;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.menu .menu-section .menu-order{
+    margin-left: 68px;
+    margin-top: 27px;
+}
+
+.menu-section .menu-order .menu-order-section{
+    display: flex;
+    margin-top: 27px;
+    margin-left: -20px;
+}
+
+.menu-section .menu-order .menu-text{
+    font-style: italic;
+}
+
+.menu-order .menu-text p{
+    font-weight: 700;
+    font-size: 26px;
+    color: #A4D2F9;
+}
+
+/* .menu-section .menu-order .order-history{
+    margin-top: 27px;
+    margin-left: -20px;
+} */
+
+.menu-order .order-history img{
+    width: 53px;
+    height: 53px;
+}
+
+.menu-order .menu-order-section .order-button{
+    margin-left: 9px;
+
+}
+.menu-order .menu-order-section .review-button{
+    margin-left: 9px;
+}
+
+.menu-order-section .order-button button{
+    width: 261px;
+    height: 53px;
+    border-radius: 35px;
+    border:1px solid #ffff;
+    background-color: #F8C015;
+    font-weight: 700;
+    font-size: 26px;
+    color: #ffff;
+}
+
+.menu-order-section .review-button button{
+    width: 261px;
+    height: 53px;
+    border-radius: 35px;
+    border:1px solid #F8C015;
+    background-color: #FEF9E8;
+    font-weight: 700;
+    font-size: 26px;
+    color: #F8C015;
 }
 
 .container .menu .item-card{
@@ -323,3 +394,79 @@ main .container .menu{
     font-weight: 700;
     font-size: 20px;
 }
+
+main .container .about{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 57px;
+    margin-right: 35px;
+    margin-bottom: 42px;
+    margin-left: 35px;
+    gap: 50px;
+}
+
+.container .about .about-section{
+    margin-right: 0;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.about .about-section .about-title{
+    font-family:"Poller One", sans-serif;
+}
+
+.about-section .about-title h1{
+    font-size: 64px;
+    color: #184265;
+}
+
+.about-section .about-title span{
+    font-size: 64px;
+    color: #3A9DF1;
+}
+
+.container .about .about-subtitle{
+    margin-top: 15px;
+}
+
+.about-section .about-subtitle h3{
+    font-weight: 700;
+    font-size: 26px;
+    color: #184265;
+}
+
+.about .about-section .about-description{
+    font-family: 'Cabin', sans-serif;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.about-section .about-description p{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.about .about-section .about-button{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-section .about-button button{
+    width: 353px;
+    height: 64px;
+    background-color: #3A9DF1;
+    color: white;
+    border-radius: 35px;
+    border: 1px solid #ffff;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+/* .about-button button svg{
+    margin-top: 14px;
+    margin-bottom: 14px;
+} */
