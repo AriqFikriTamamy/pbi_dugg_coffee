@@ -466,6 +466,135 @@ main .container .about{
     font-size: 26px;
 }
 
+main .container .facility{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 27px;
+    margin-right: 35px;
+    margin-bottom: 42px;
+    margin-left: 35px;
+    gap: 50px;
+}
+
+.container .facility .facility-section{
+    margin-right: 0;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.facility .facility-section .facility-title{
+    font-family:"Poller One", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.facility-section .facility-title h1{
+    font-size: 64px;
+    color: #3A9DF1;
+}
+
+.facility-section .facility-title span{
+    font-size: 64px;
+    color: #184265;
+}
+
+.facility .facility-section .facility-gallery-top{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 37px;
+}
+
+.facility .facility-section .facility-gallery-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 37px;
+}
+
+.facility-section .facility-gallery-top .gallery-container{
+    position: relative;
+}
+
+.facility-section .facility-gallery-bottom .gallery-container{
+    position: relative;
+}
+
+.facility-gallery-top .gallery-container img{
+    width: 680px;
+    height: 198px;
+}
+
+.facility-gallery-top .gallery-container .gallery-text{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    right: -50%;
+    color: #ffff;
+    margin-left: 22px;
+    margin-bottom: 12px;
+}
+
+.facility-gallery-bottom .gallery-container .gallery-text{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    right: -50%;
+    color: #ffff;
+    margin-left: 22px;
+    margin-bottom: 12px;
+}
+
+.gallery-container .gallery-text .gallery-text-title{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.gallery-container .gallery-text .gallery-text-subtitle{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.facility-gallery-top .gallery-container .gallery-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #ffff;
+    margin-left: 22px;
+    margin-bottom: 12px;
+}
+
+.gallery-container .gallery-button #booking-1{
+    background-color: #3A9DF1;
+    color: #ffff;
+}
+
+.gallery-container .gallery-button #booking-2{
+    background-color: #ffff;
+    color: #3A9DF1;
+    border: 1px solid #3A9DF1;
+}
+
+.gallery-container .gallery-button button{
+    width: 271px;
+    height: 53px;
+    border-radius: 35px;
+    border: 1px solid #ffff;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.facility .facility-section .facility-gallery-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 22px;
+}
 /* .about-button button svg{
     margin-top: 14px;
     margin-bottom: 14px;
