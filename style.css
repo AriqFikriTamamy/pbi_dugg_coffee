@@ -595,7 +595,62 @@ main .container .facility{
     gap: 10px;
     margin-top: 22px;
 }
-/* .about-button button svg{
-    margin-top: 14px;
-    margin-bottom: 14px;
-} */
+
+main .container .promo-and-article{
+    width: auto;
+    height: 844px;
+    background-color: #184265;
+}
+
+.promo .promo-section .promo-title{
+    font-family:"Poller One", sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #3A9DF1;
+}
+
+.promo-section .promo-title h1{
+    font-weight: 400;
+    font-size: 64px;
+    margin-top: 28px;
+}
+
+.promo-title h1 span{
+    font-weight: 400;
+    font-size: 64px;
+    margin-top: 28px;
+    color: #ffff;
+}
+
+.promo-section .promo-title img{
+    width: 93px;
+    height: 96.9px;
+    position: absolute;
+    left: 68%;
+    margin-top: 23px;
+}
+
+.promo .promo-section .promo-carousel{
+    width: 100%;
+    margin-top: 39px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.promo-section .promo-carousel .arrow{
+    width: 50px;
+    height: 48px;
+}
+
+.promo-section .promo-carousel #arrow-back{
+    position: absolute;
+    left: 15%;
+    top: 40%;
+}
+
+.promo-section .promo-carousel #arrow-forward{
+    position: absolute;
+    right: 15%;
+    top: 40%;
+}
