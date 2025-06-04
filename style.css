@@ -114,16 +114,62 @@ header .container .navbar{
     margin-right: 10px;
 }
 
-.container .hero .image-hero{
+.hero .background-hero video{
     width: 100%;
-    height: 791px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: auto;
+    position: relative;
+}
+
+.container .hero .hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffff;
+    text-align: center;
+}
+
+.hero .hero-text .hero-text-header{
+    font-family:"Poller One", sans-serif;
+    margin-bottom: 14px;
+}
+
+.hero-text .hero-text-header h1{
+    font-weight: 400;
+    font-size: 64px;
+}
+
+.hero .hero-text .hero-text-subtitle{
+    display: flex;
+    align-items: center;
+    width: 650px;
+    height: 110px;
+    border-radius: 100px;
+    background-color: rgba(58, 157, 241, 0.25)
+}
+
+.hero-text .hero-text-subtitle p{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.hero .hero-text .hero-button{
+    margin-top: 65px;
+}
+
+.hero-text .hero-button button{
+    width: 125px;
+    height: 53px;
+    border: 1px solid #FFFFFF;
+    border-radius: 35px;
+    background-color: #3A9DF1;
+    color: #ffff;
+    font-weight: 700;
+    font-size: 26px;
 }
 
 main .container .menu{
     display: flex;
-    /* justify-content: space-between; */
     justify-content: center;
     align-items: center;
     flex-direction: row;
