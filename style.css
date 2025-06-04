@@ -16,9 +16,8 @@ html body{
     padding: 0;
 }
 
-.container{
+html body .container{
     width: 100%;
-    /* max-width: 1440px; */
     margin: 0 auto;
 }
 
@@ -104,7 +103,6 @@ header .container .navbar{
     cursor: pointer;
     color:  #3A9DF1;
     background-color: #ffff;
-
 }
 
 .nav-button #location-button{
@@ -115,14 +113,6 @@ header .container .navbar{
 .nav-button #contact-button{
     margin-right: 10px;
 }
-
-/* .background-hero{
-    background-image: url("Gen-4\ Turbo\ Create\ a\ short\ video\ of\ a\ young\ Southeast\ Asian\ man\ sitting\ at\ a\ bamboo\ dining\ table\ with\ two\ rice\ bowls\,\ iced\ tea\,\ and\ dipping\ sauce\ He\ looks\ happy\ and\ about\ to\ start\ eating\ The\ backgro\ 1.png");
-    width: 100%;
-    height: 791px;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 
 .container .hero .image-hero{
     width: 100%;
@@ -290,11 +280,6 @@ main .container .menu{
     color: #A4D2F9;
 }
 
-/* .menu-section .menu-order .order-history{
-    margin-top: 27px;
-    margin-left: -20px;
-} */
-
 .menu-order .order-history img{
     width: 53px;
     height: 53px;
@@ -383,7 +368,6 @@ main .container .menu{
 .item-description .item-review .item-comment{
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: center;
     gap: 5px;
     color: #F8C015;
@@ -413,8 +397,6 @@ main .container .about{
 
 .container .about .about-section{
     margin-right: 0;
-    /* display: flex;
-    flex-direction: row; */
 }
 
 .about .about-section .about-title{
@@ -472,7 +454,6 @@ main .container .about{
 
 main .container .facility{
     display: flex;
-    /* justify-content: space-between; */
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -797,7 +778,6 @@ main .container .promo-and-article{
 .article .article-section .read-more{
     position: absolute;
     top: 95%;
-    /* bottom: 10%; */
     left: 60%;
 }
 
@@ -816,6 +796,177 @@ main .container .promo-and-article{
 .article .article-section #more-button{
     position: absolute;
     top: 120%;
-    /* bottom: 10%; */
     left: 60%;
+}
+
+html body footer{
+    margin-top: 295px;
+}
+
+body footer .footer{
+    background-image: url("footer-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+}
+
+footer .footer .footer-section{
+    display: flex;
+    flex-direction: row;
+    gap: 106px;
+    min-height: 100%;
+}
+
+.footer .footer-section .footer-logo{
+    display: flex;
+    flex-direction: row;
+    gap: 106px;
+    margin-top: 25px;
+}
+
+.footer-section .footer-logo img{
+    width: auto;
+    height: 221px;
+    margin-top: 25px;
+    margin-left: 46px;
+    margin-bottom: 85px;
+}
+
+.footer-section .footer-logo .logo-text{
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    margin-top: 25px;
+}
+
+.footer-logo .logo-text h1{
+    font-family:"Poller One", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #A4D2F9;
+}
+
+.footer-logo .logo-text p{
+    text-align: center;
+    font-weight: 700;
+    font-size: 26px;
+    color: #ffff;
+}
+
+.footer .footer-section .footer-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.footer-section .footer-nav .footer-nav-header{
+    text-align: center;
+}
+
+.footer-nav .footer-nav-header h1{
+    font-weight: 700;
+    font-size: 36px;
+    color: #ffff;
+}
+
+.footer-section .footer-nav .footer-nav-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav .footer-nav-list .footer-nav-right{
+    flex-direction: column;
+    margin-left: 93px;
+}
+
+.footer-nav .footer-nav-list ul{
+    font-family: 'Cabin', sans-serif;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+}
+
+.footer-nav-list ul li{
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffff;
+}
+
+.footer .footer-section .footer-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 25px;
+    color: #ffff
+}
+
+.footer-contact .footer-contact-header h1{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.footer-section .footer-contact .footer-address{
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+}
+
+.footer-contact .footer-address img{
+    width: 24px;
+    height: 24px;
+}
+
+.footer-contact .footer-address p{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.footer-section .footer-contact .footer-email{
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+}
+
+.footer-contact .footer-email img{
+    width: 24px;
+    height: 24px;
+}
+
+.footer-contact .footer-email p{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.footer .footer-section .footer-social{
+    display: flex;
+    flex-direction: row;
+    gap: 29px;
+}
+
+.footer-section .footer-social img{
+    width: 55px;
+    height: 55px;
+}
+
+footer .footer .footer-copyright{
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    color: #ffff;
+}
+
+.footer .footer-copyright p{
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
