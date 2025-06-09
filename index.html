@@ -30,10 +30,10 @@
           </div>
           <ul class="nav-list">
             <li><a href="./index.html" id="navbar-selected">Home</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Artikel</a></li>
-            <li><a href="">FAQ</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="article.html">Artikel</a></li>
+            <li><a href="faq.html">FAQ</a></li>
           </ul>
           <div class="nav-button">
             <button id="location-button">Lokasi</button>
@@ -52,7 +52,7 @@
               alt="Image Hero"
               class="image-hero"
             /> -->
-            <video autoplay loop class="video-hero">
+            <video autoplay loop muted class="video-hero">
               <source src="Video_duck_coffeee_home.mp4" type="video/mp4" />
             </video>
           </div>
@@ -65,14 +65,16 @@
               <p>Your Green Escape in the Heart of Bandung</p>
             </div>
             <div class="hero-button">
-              <button>Promo</button>
+              <a href="#promo">
+                <button>Promo</button>
+              </a>
             </div>
           </div>
         </section>
 
         <!-- Menu Section -->
         <div class="container">
-          <section class="menu">
+          <section class="menu" id="menu">
             <div class="menu-section">
               <div class="menu-title">
                 <h1>Dugg Coffee <span>Menu</span></h1>
@@ -435,7 +437,7 @@
 
           <!-- Promo and Article Section -->
           <div class="container">
-            <section class="promo-and-article">
+            <section class="promo-and-article" id="promo">
               <div class="promo">
                 <div class="promo-section">
                   <div class="promo-title">
@@ -444,19 +446,31 @@
                   </div>
 
                   <div class="promo-carousel">
-                    <img src="Banner  1.png" alt="Banner 1" />
-                    <img
-                      src="Frame 107.png"
-                      alt="Arrow Back"
-                      class="arrow"
-                      id="arrow-back"
-                    />
-                    <img
-                      src="Frame 106.png"
-                      alt="Arrow Forward"
-                      class="arrow"
-                      id="arrow-forward"
-                    />
+                    <div class="carousel-item">
+                      <img src="Banner  1.png" alt="Banner 1" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="banner_3 promo 1.png" alt="Banner 2" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="banner 1 dugg coffee 1.png" alt="Banner 3" />
+                    </div>
+                    <a onclick="buttonSlides(1)">
+                      <img
+                        src="Frame 107.png"
+                        alt="Arrow Back"
+                        class="arrow"
+                        id="arrow-back"
+                      />
+                    </a>
+                    <a onclick="buttonSlides(1)">
+                      <img
+                        src="Frame 106.png"
+                        alt="Arrow Forward"
+                        class="arrow"
+                        id="arrow-forward"
+                      />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -592,6 +606,33 @@
             </div>
           </div>
         </div>
+
+        <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+
+          function buttonSlides(n) {
+            showSlides((slideIndex += n));
+          }
+
+          function showSlides(n) {
+            let slides = document.getElementsByClassName("carousel-item");
+
+            if (n > slides.length) {
+              slideIndex = 1;
+            }
+
+            if (n < 1) {
+              slideIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+          }
+        </script>
 
         <div class="footer-copyright">
           <p>&copy; 2025 Dugg Coffee. All rights reserved</p>
