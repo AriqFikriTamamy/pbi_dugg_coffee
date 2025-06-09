@@ -14,6 +14,7 @@ html body{
     font-family: "Plus Jakarta Sans", sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 html body .container{
@@ -668,6 +669,10 @@ main .container .promo-and-article{
     display: flex;
     justify-content: center;
     position: relative;
+}
+
+.carousel-item{
+    display: none;
 }
 
 .promo-section .promo-carousel .arrow{
