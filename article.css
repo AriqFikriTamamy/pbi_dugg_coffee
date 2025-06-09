@@ -1,0 +1,42 @@
+@import url(style.css);
+
+main .container .article-header{
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+.article-header .article-icon img{
+    width: 32px;
+    height: 32px;
+}
+
+.container .article-header .article-header-section{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.article-header .article-header-section .header-title{
+    width: 404px;
+    height: 33px;
+    background-color: #EBF5FE;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: #3A9DF1;
+}
+
+.article-header-section .header-title h1{
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.article-header .article-header-section .header-subtitle{
+    font-family: "Cabin", sans-serif;
+}
+
+.article-header .article-header-section .header-subtitle h2{
+    font-weight: 400;
+    font-size: 20px;
+}
