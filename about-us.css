@@ -252,3 +252,53 @@ main .container .facility-and-location{
     font-size: 26px;
     border: 1px solid #3A9DF1;
 }
+
+main .container .description{
+    width: 100%;
+    height: 150px;
+    background-color: #EBF5FE;
+    margin-top: 76px;
+    margin-bottom: 55px;
+}
+
+.container .description .description-section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 34px;
+    margin-right: 34px;
+}
+
+.description .description-section .description-title{
+    font-family:"Poller One", sans-serif;
+    color: #184265;
+    text-align: center;
+    margin-top: 14.5px;
+}
+
+.description-section .description-title h1{
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.description-section .description-title span{
+    font-weight: 400;
+    font-size: 36px;
+    color: #3A9DF1;
+}
+
+.description .description-section .description-text{
+    font-family: 'Cabin', sans-serif;
+    color: #184265;
+    text-align: justify;
+}
+
+.description-section .description-text p{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.description-section .description-text b{
+    font-weight: 700;
+    font-size: 20px;
+}
