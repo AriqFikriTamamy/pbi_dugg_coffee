@@ -671,8 +671,13 @@ main .container .promo-and-article{
     position: relative;
 }
 
-.carousel-item{
+.promo-section .promo-carousel .carousel-item{
+    /* width: 100%; */
     display: none;
+}
+
+.promo-carousel .carousel-item img{
+    width: 100%;
 }
 
 .promo-section .promo-carousel .arrow{
@@ -690,6 +695,26 @@ main .container .promo-and-article{
     position: absolute;
     right: 15%;
     top: 40%;
+}
+
+.promo-section .promo-carousel .carousel-dot{
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    gap: 9px;
+}
+
+.promo-carousel .carousel-dot .dot{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffff;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.promo-carousel .carousel-dot .dot.active{
+    background-color: #3A9DF1;
 }
 
 .container .promo-and-article .article{
