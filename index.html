@@ -167,7 +167,7 @@
                 </div>
 
                 <div class="order-button">
-                  <button id="openModal">Pesan Sekarang</button>
+                  <button id="modalOpen">Pesan Sekarang</button>
                 </div>
 
                 <!-- Order Modal -->
@@ -223,8 +223,39 @@
                   </div>
                 </div>
 
+                <!-- Review Modal -->
+                <div class="modal-overlay" id="reviewModal">
+                  <div class="modal-review">
+                    <h2>Berikan Review</h2>
+                    <label>Nama</label>
+                    <input type="text" placeholder="Isi Nama Kalian" />
+
+                    <label>Komentar</label>
+                    <textarea
+                      rows="4"
+                      placeholder="Isi Komentar Review Kalian"
+                    ></textarea>
+
+                    <label>Rating</label>
+                    <div class="rating" id="ratingStars">
+                      <span class="star" onclick="setRating(1)">★</span>
+                      <span class="star" onclick="setRating(2)">★</span>
+                      <span class="star" onclick="setRating(3)">★</span>
+                      <span class="star" onclick="setRating(4)">★</span>
+                      <span class="star" onclick="setRating(5)">★</span>
+                    </div>
+
+                    <div class="buttons">
+                      <button class="btn cancel" onclick="closeModal()">
+                        Batal
+                      </button>
+                      <button class="btn save">Simpan</button>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="review-button">
-                  <button>Berikan Review</button>
+                  <button onclick="openModal()">Berikan Review</button>
                 </div>
               </div>
             </div>
@@ -746,7 +777,7 @@
     <!-- Order Modal -->
     <script>
       const modal = document.getElementById("modal");
-      const openBtn = document.getElementById("openModal");
+      const openBtn = document.getElementById("modalOpen");
       const cancelBtn = document.querySelector(".cancel-btn");
 
       openBtn.onclick = () => {
@@ -760,6 +791,33 @@
       window.onclick = function (event) {
         if (event.target === modal) {
           modal.style.display = "none";
+        }
+      };
+    </script>
+
+    <!-- Review Modal -->
+    <script>
+      const modalReview = document.getElementById("reviewModal");
+      const stars = document.querySelectorAll(".star");
+
+      function openModal() {
+        modalReview.style.display = "flex";
+      }
+
+      function closeModal() {
+        modalReview.style.display = "none";
+      }
+
+      function setRating(rating) {
+        stars.forEach((star, index) => {
+          star.classList.toggle("selected", index < rating);
+        });
+      }
+
+      // Optional: Close modal if clicked outside
+      window.onclick = function (event) {
+        if (event.target === modal) {
+          closeModal();
         }
       };
     </script>
