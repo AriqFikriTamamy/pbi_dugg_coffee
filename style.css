@@ -675,6 +675,26 @@ main .container .promo-and-article{
     display: none;
 }
 
+.promo-section .promo-carousel .carousel-dot{
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    gap: 9px;
+}
+
+.promo-carousel .carousel-dot .dot{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffff;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.promo-carousel .carousel-dot .dot.active{
+    background-color: #3A9DF1;
+}
+
 .promo-section .promo-carousel .arrow{
     width: 50px;
     height: 48px;
