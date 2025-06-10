@@ -165,7 +165,60 @@
                 </div>
 
                 <div class="order-button">
-                  <button>Pesan Sekarang</button>
+                  <button id="openModal">Pesan Sekarang</button>
+                </div>
+
+                <!-- Order Modal -->
+                <div id="modal" class="modal">
+                  <div class="modal-content">
+                    <div class="left-panel">
+                      <h2>Pesanan</h2>
+                      <div class="order-item">
+                        <img src="FeedsProduk_1 1.png" alt="Latte Hot" />
+                        <div class="item-info">
+                          <strong>Latte Hot</strong>
+                          <p>Espresso + Susu</p>
+                          <p>25K</p>
+                        </div>
+                        <div class="item-controls">
+                          <button>-</button>
+                          <span>1</span>
+                          <button>+</button>
+                        </div>
+                      </div>
+                      <button class="add-order">tambah pesanan +</button>
+                    </div>
+
+                    <div class="right-panel">
+                      <h3>
+                        <span class="info-icon"
+                          ><img src="ICON.png" alt="Icon"
+                        /></span>
+                        Nikmati menu terbaik kami
+                      </h3>
+                      <div class="payment-method">
+                        <label
+                          ><input type="radio" name="payment" checked /> Di
+                          kasir</label
+                        >
+                        <label
+                          ><input type="radio" name="payment" /> Q-ris</label
+                        >
+                      </div>
+                      <input type="text" placeholder="Isi Nama Kalian" />
+                      <input type="text" placeholder="Isi Kode Voucher" />
+                      <div class="summary">
+                        <p>Voucher: -Rp5.000</p>
+                        <p>Harga: Rp25.000</p>
+                        <p><strong>Total: Rp20.000</strong></p>
+                      </div>
+                      <div class="actions">
+                        <button class="cancel-btn">Batal</button>
+                        <button class="pay-btn">Bayar</button>
+                      </div>
+                      <p class="tax-note">Pesanan Sudah di Potong ppn 11%</p>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="review-button">
@@ -625,63 +678,84 @@
           </div>
         </div>
 
-        <script>
-          let slideIndex = 0;
-          showSlides();
-
-          function buttonSlides(n) {
-            showSlides(slideIndex + n);
-          }
-
-          function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("carousel-item");
-            let dots = document.getElementsByClassName("dot");
-
-            if (n === undefined) {
-              slideIndex++;
-            } else {
-              slideIndex = n;
-            }
-
-            if (slideIndex > slides.length) {
-              slideIndex = 1;
-            }
-
-            if (slideIndex < 1) {
-              slideIndex = slides.length;
-            }
-
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            clearTimeout(window.slideTimer);
-            window.slideTimer = setTimeout(showSlides, 3500);
-            // setTimeout(showSlides, 3000);
-          }
-        </script>
-
-        <script>
-          document.getElementById("arrow-back").onclick = function () {
-            buttonSlides(-1);
-          };
-          document.getElementById("arrow-forward").onclick = function () {
-            buttonSlides(1);
-          };
-        </script>
-
         <div class="footer-copyright">
           <p>&copy; 2025 Dugg Coffee. All rights reserved</p>
         </div>
       </div>
     </footer>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function buttonSlides(n) {
+        showSlides(slideIndex + n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("carousel-item");
+        let dots = document.getElementsByClassName("dot");
+
+        if (n === undefined) {
+          slideIndex++;
+        } else {
+          slideIndex = n;
+        }
+
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+
+        if (slideIndex < 1) {
+          slideIndex = slides.length;
+        }
+
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        clearTimeout(window.slideTimer);
+        window.slideTimer = setTimeout(showSlides, 3500);
+        // setTimeout(showSlides, 3000);
+      }
+    </script>
+
+    <script>
+      document.getElementById("arrow-back").onclick = function () {
+        buttonSlides(-1);
+      };
+      document.getElementById("arrow-forward").onclick = function () {
+        buttonSlides(1);
+      };
+    </script>
+
+    <!-- Order Modal -->
+    <script>
+      const modal = document.getElementById("modal");
+      const openBtn = document.getElementById("openModal");
+      const cancelBtn = document.querySelector(".cancel-btn");
+
+      openBtn.onclick = () => {
+        modal.style.display = "flex";
+      };
+
+      cancelBtn.onclick = () => {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
